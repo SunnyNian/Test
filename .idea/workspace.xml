@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d3f94d6-8d33-484a-8fa6-b9b3affe4a8c" name="Default" comment="" />
+    <list default="true" id="2d3f94d6-8d33-484a-8fa6-b9b3affe4a8c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCount.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCount.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +18,8 @@
       <file leaf-file-name="WordCount.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WordCount.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -34,6 +38,9 @@
       <find>Eights</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -45,12 +52,13 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="512" />
-    <option name="y" value="-26" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="459" />
+    <option name="y" value="42" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -91,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SevensAndEights">
+  <component name="RunManager" selected="Python.WordCount">
     <configuration name="CrazyEights" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyDump" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,18 +154,37 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="WordCount" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyDump" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WordCount.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.MachineLearning" />
       <item itemvalue="Python.CrazyEights" />
       <item itemvalue="Python.SevensAndEights" />
+      <item itemvalue="Python.WordCount" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SevensAndEights" />
-        <item itemvalue="Python.SevensAndEights" />
-        <item itemvalue="Python.SevensAndEights" />
-        <item itemvalue="Python.CrazyEights" />
-        <item itemvalue="Python.CrazyEights" />
+        <item itemvalue="Python.WordCount" />
+        <item itemvalue="Python.WordCount" />
+        <item itemvalue="Python.WordCount" />
+        <item itemvalue="Python.WordCount" />
+        <item itemvalue="Python.WordCount" />
       </list>
     </recent_temporary>
   </component>
@@ -184,15 +211,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="459" y="42" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32830626" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35034803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -203,32 +231,38 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WordCount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/processing.js/CrazyEights.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -316,13 +350,11 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/WordCount.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/WordCount.py" />
     <entry file="file://$PROJECT_DIR$/WordCount.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
