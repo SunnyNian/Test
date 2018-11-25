@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3f94d6-8d33-484a-8fa6-b9b3affe4a8c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/sunny.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cryptography.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cryptography.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordCount.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCount.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processing.js/CrazyEights.py" beforeDir="false" afterPath="$PROJECT_DIR$/processing.js/CrazyEights.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classroom.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classroom.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,17 +16,26 @@
       <file leaf-file-name="CarDealer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CarDealer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
+            <state relative-caret-position="51">
               <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrazyEights.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Classroom.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classroom.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrazyEights.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/processing.js/CrazyEights.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+            <state relative-caret-position="-274">
+              <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -61,6 +66,7 @@
         <option value="$PROJECT_DIR$/Cryptography.py" />
         <option value="$PROJECT_DIR$/WordCount.py" />
         <option value="$PROJECT_DIR$/processing.js/CrazyEights.py" />
+        <option value="$PROJECT_DIR$/Classroom.py" />
       </list>
     </option>
   </component>
@@ -224,7 +230,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="459" y="42" width="1400" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
@@ -370,17 +375,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/processing.js/CrazyEights.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-274">
+          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CarDealer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
+        <state relative-caret-position="51">
           <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/processing.js/CrazyEights.py">
+    <entry file="file://$PROJECT_DIR$/Classroom.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+        <state relative-caret-position="170">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>

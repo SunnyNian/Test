@@ -1,7 +1,9 @@
 import random
 
 class Classroom:
-
+    """
+    This is a list of all classes, as well as the people registered in each class.
+    """
     tencount = [[],[],[],[],[],[],[],[],[],[]]
     elecount = [[], [], [], [], [], [], [], [], [], [], []]
     twecount = [[], [], [], [], [], [], [], [], [], [], []]
@@ -35,7 +37,10 @@ class Classroom:
         self.classes = []
 
     def enrollment(self):
-        #list of classes
+        """
+
+        :return:
+        """
 
         tenoption = random.randint(5, 9)
         eleoption = random.randint(4, 8)
@@ -85,6 +90,7 @@ class Classroom:
             self.classes.append(Classroom.tweclass[eleoption])
             Classroom.twecount[eleoption].append([self.name, self.surname, self.admin])
 
+    @staticmethod
     def search(classn):
         for i in range(len(Classroom.tenclass)):
             if classn in Classroom.tenclass[i]:
