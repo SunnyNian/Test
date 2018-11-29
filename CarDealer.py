@@ -104,7 +104,7 @@ class Car:
 
             print("Search for car has ended.")
         except:
-            print("Woops!")
+            print("Woops! Something went wrong. Maybe the price wasn't an integer or float?")
 
 
 # TO USE:
