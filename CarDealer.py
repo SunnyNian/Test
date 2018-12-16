@@ -112,3 +112,4 @@ class Car:
 # 2. Different cars will be stored in Car.a, whereas the count of each car is stored in Car.b
 # 3. To find a car already stored, run the command Car.findCar(make, model, year, odometer, colour, price")
 # 4. To find out what a customer can purchase, run the command Car.customer(name, phone, income)
+#
