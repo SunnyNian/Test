@@ -11,13 +11,17 @@ class Test:
         self.time_frame = None
         self.point_x = None
         self.x_label = None
+        self.x_domain_label = None
         self.point_y = None
         self.y_label = None
+        self.y_domain_label = None
         self.point_create = None
         self.point_reset = None
         self.variable_frame = None
         self.learning_rate = None
         self.learning_rate_label = None
+        self.learning_rate_enter = None
+        self.learning_rate_set = None
         self.create()
 
     def create(self):
@@ -32,20 +36,26 @@ class Test:
         self.x_label = ttk.Label(master=self.time_frame, text="X :")
         self.x_label.grid(row=1, column=1, sticky=tk.E)
 
-        self.point_x = tk.Spinbox(master=self.time_frame, from_=0, to=99, width=6, justify=tk.RIGHT, repeatinterval=30)
+        self.point_x = tk.Spinbox(master=self.time_frame, from_=0, to=99, width=6, justify=tk.RIGHT, repeatinterval=18)
         self.point_x.grid(row=1, column=2, sticky=tk.E)
 
         self.y_label = ttk.Label(master=self.time_frame, text="Y :")
         self.y_label.grid(row=2, column=1, sticky=tk.E)
 
-        self.point_y = tk.Spinbox(master=self.time_frame, from_=0, to=99, width=6, justify=tk.RIGHT, repeatinterval=30)
+        self.point_y = tk.Spinbox(master=self.time_frame, from_=0, to=99, width=6, justify=tk.RIGHT, repeatinterval=18)
         self.point_y.grid(row=2, column=2, sticky=tk.E)
 
         self.point_create = ttk.Button(master=self.time_frame, text="Add", width=7, command=self.createPoint)
-        self.point_create.grid(row=1, column=3, columnspan=2, sticky=tk.S, padx=32)
+        self.point_create.grid(row=1, column=3, columnspan=2, sticky=tk.S, padx=22)
 
         self.point_reset = ttk.Button(master=self.time_frame, text="Reset", width=7, command=self.resetPoint)
-        self.point_reset.grid(row=2, column=3, columnspan=2, sticky=tk.S, padx=32)
+        self.point_reset.grid(row=2, column=3, columnspan=2, sticky=tk.S, padx=22)
+
+        self.x_domain_label = ttk.Label(master=self.time_frame, text="0 ≤ X ≤ 99, X ϵ Z")
+        self.x_domain_label.grid(row=1, column=5)
+
+        self.y_domain_label = ttk.Label(master=self.time_frame, text="0 ≤ Y ≤ 99, Y ϵ Z")
+        self.y_domain_label.grid(row=2, column=5)
 
         # Frame for linear regression variables
         self.variable_frame = ttk.LabelFrame(master=self.parent, text="Regression Variables", relief=tk.RIDGE)
@@ -58,8 +68,30 @@ class Test:
                                       resolution=0.01, orient=tk.HORIZONTAL, command=self.learningRate)
         self.learning_rate.grid(row=1, column=2, sticky=tk.E + tk.N)
 
-    def learningRate(self, test):
-        print("Learning rate (α): {}".format(self.learning_rate.get()))
+        self.learning_rate_enter = ttk.Entry(master=self.variable_frame, width=4)
+        self.learning_rate_enter.grid(row=1, column=3, sticky=tk.E + tk.W)
+
+        self.learning_rate_set = ttk.Button(master=self.variable_frame, width=7, text="Set α", command=self.setLR)
+        self.learning_rate_set.grid(row=1, column=4)
+
+    def learningRate(self, learn):
+        print("Learning rate (α): {}".format(learn))
+        self.learning_rate_enter.delete(0, "end")
+        self.learning_rate_enter.insert(0, learn)
+
+    def setLR(self):
+        lr = float(self.learning_rate_enter.get())
+        if lr > 1:
+            lr = 1
+            self.learning_rate_enter.delete(0, "end")
+            self.learning_rate_enter.insert(0, 1.00)
+        elif lr < 0:
+            lr = 0
+            self.learning_rate_enter.delete(0, "end")
+            self.learning_rate_enter.insert(0, 0.00)
+        print("Learning rate (α): {}".format(lr))
+        self.learning_rate.set(lr)
+
 
     def createPoint(self):
         print("({}, {})".format(self.point_x.get(), self.point_y.get()))
