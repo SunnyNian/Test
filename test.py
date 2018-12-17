@@ -3,6 +3,9 @@ from tkinter import ttk
 
 
 class Test:
+
+    points = []
+
     def __init__(self):
         self.parent = tk.Tk()
         self.parent.title("Linear Regression")
@@ -22,6 +25,7 @@ class Test:
         self.learning_rate_label = None
         self.learning_rate_enter = None
         self.learning_rate_set = None
+        self.settings_frame = None
         self.create()
 
     def create(self):
@@ -74,6 +78,29 @@ class Test:
         self.learning_rate_set = ttk.Button(master=self.variable_frame, width=7, text="Set α", command=self.setLR)
         self.learning_rate_set.grid(row=1, column=4)
 
+        #Frame for already set stuff
+        self.settings_frame = ttk.LabelFrame(master=self.parent, text="Points and Settings", relief=tk.RIDGE)
+        self.settings_frame.grid(row=1, column=2, sticky=tk.E + tk.W + tk.S + tk.N, padx=10)
+
+        self.points = ttk.Combobox(master=self.settings_frame, width=7)
+        self.points['values'] = Test.points
+        self.points.grid(row=1, column=2)
+
+        self.points_label = ttk.Label(master=self.settings_frame, text="Plotted Points :")
+        self.points_label.grid(row=1, column=1)
+
+        self.delete_point = ttk.Button(master=self.settings_frame, text="Delete", command=self.delPoint)
+        self.delete_point.grid(row=1, column=3, padx = 3)
+
+    def delPoint(self):
+        print(self.points.get())
+        Test.points.remove(self.points.get())
+        self.points['values'] = Test.points
+        self.points.delete(0, "end")
+        self.points.insert(0, "")
+        return
+
+
     def learningRate(self, learn):
         print("Learning rate (α): {}".format(learn))
         self.learning_rate_enter.delete(0, "end")
@@ -95,6 +122,9 @@ class Test:
 
     def createPoint(self):
         print("({}, {})".format(self.point_x.get(), self.point_y.get()))
+        Test.points.append(self.point_x.get() + "," + self.point_y.get())
+        Test.points.sort()
+        self.points['values'] = Test.points
 
     def resetPoint(self):
         self.point_x.delete(0, "end")
