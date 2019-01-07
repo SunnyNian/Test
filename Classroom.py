@@ -107,12 +107,125 @@ class Classroom:
                 print(str(Classroom.twecount[i]) + " in " + classn)
                 return
 
+    def addclass(self, classname):
+        if classname in Classroom.tenclass:
+            for i in tenclass:
+                if classname in i:
+                    self.classes.append(i)
+        if classname in Classroom.eleclass:
+            for i in eleclass:
+                if classname in i:
+                    self.classes.append(i)
+        if classname in Classroom.tweclass:
+            for i in tweclass:
+                if classname in i:
+                    self.classes.append(i)
+
     def __str__(self):
         return "Name: " + str(self.surname) + ", " + str(self.name) + "\nYear of Birth: " + str(self.dob) + "\nAdministration Number: " + str(self.admin) +"\nClasses Enrolled: " + str(self.classes)
 
-#To use:
-#Create a student as an object: a = Classroom("first name", "last name", birthyear, administration no.)
-#Enroll the student in classes: a.enrollment()
-#If you want to see details of the student: print(a)
-#If you want to see every student in a class: Classroom.search("Math 31"), or Classroom.search("MT1231")
-#
+students = []
+while True:
+    choose = input("\n\n\n\n\n\n\n\n\n\n\nChoose an action:\n1) Add a student\n2) Enroll a student\n"
+                   "3) View a Student's Details\n4)Add a class to a student\n5)Search a Class\n6) Quit")
+    if choose == "1":
+        students.append("Placeholder")
+        name = input("\n\n\n\n\n\n\n\n\n\n\nEnter student's name:")
+        last = input("\n\n\n\n\n\n\n\n\n\n\nEnter student's last name:")
+        year = input("\n\n\n\n\n\n\n\n\n\n\nEnter student's year of birth:")
+        if int(year) in [2001, 2002, 2003]:
+            admi = input("\n\n\n\n\n\n\n\n\n\n\nEnter student's administrative number:")
+            students[len(students) - 1] = Classroom(name, last, int(year), admi)
+        else:
+            input("Invalid year of birth!")
+
+    elif choose == "2":
+        firstname = input("\n\n\n\n\n\n\n\n\n\n\nStudent's first name?")
+        lastname = input("\n\n\n\n\n\n\n\n\n\n\nStudent's last name?")
+        for i, j in enumerate(students, 1):
+            if firstname.upper() == j.name.upper() and lastname.upper() == j.surname.upper():
+                j.enrollment()
+                input("\n\n\n\n\n\n\n\n\n\n\nStudent enrolled!")
+                break
+
+    elif choose == "3":
+        firstname = input("\n\n\n\n\n\n\n\n\n\n\nStudent's first name?")
+        lastname = input("\n\n\n\n\n\n\n\n\n\n\nStudent's last name?")
+        for i, j in enumerate(students, 1):
+            if firstname.upper() == j.name.upper() and lastname.upper() == j.surname.upper():
+                print(j)
+                input()
+                break
+
+    elif choose == "4":
+        breakthrough = False
+        j = 0
+        firstname = input("\n\n\n\n\n\n\n\n\n\n\nStudent's first name?")
+        lastname = input("\n\n\n\n\n\n\n\n\n\n\nStudent's last name?")
+        for i in students:
+            if firstname.upper() == i.name.upper() and lastname.upper() == i.surname.upper():
+                studentindex = j
+                break
+            j += 1
+
+        while breakthrough is False:
+            classname = input("\n\n\n\n\n\n\n\n\n\n\nWhat class would you like to add (Case sensitive!)?\n(Type 10, 11, or 12 to view different grade classes, Exit to quit)")
+            try:
+                if int(classname) == 10:
+                    print(Classroom.tenclass)
+                    input()
+                elif int(classname) == 11:
+                    print(Classroom.eleclass)
+                    input()
+                elif int(classname) == 12:
+                    print(Classroom.tweclass)
+                    input()
+            except ValueError:
+                if classname == "Exit":
+                    break
+
+                for i in Classroom.tenclass:
+                    if classname in i:
+                        students[studentindex].classes.append(i)
+                        breakthrough = True
+                        input("Success!")
+                        break
+                for i in Classroom.eleclass:
+                    if classname in i:
+                        students[studentindex].classes.append(i)
+                        breakthrough = True
+                        input("Success!")
+                        break
+                for i in Classroom.tweclass:
+                    if classname in i:
+                        students[studentindex].classes.append(i)
+                        breakthrough = True
+                        input("Success!")
+                        break
+
+    elif choose == "5":
+        breakthrough = False
+        while breakthrough is False:
+            classname = input("\n\n\n\n\n\n\n\n\n\n\nWhat class would you like to search (Case sensitive!)?\n(Type 10, 11, or 12 to view different grade classes, Exit to quit)")
+            try:
+                if int(classname) == 10:
+                    print(Classroom.tenclass)
+                    input()
+                elif int(classname) == 11:
+                    print(Classroom.eleclass)
+                    input()
+                elif int(classname) == 12:
+                    print(Classroom.tweclass)
+                    input()
+            except:
+                try:
+                    Classroom.search(classname)
+                    input()
+                    breakthrough = True
+                except:
+                    pass
+
+
+
+    elif choose == "6":
+        break

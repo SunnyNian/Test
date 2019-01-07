@@ -88,3 +88,47 @@ def unViginere(someString, someKey):
             b += 1
 
     return final
+
+while True:
+    choose = input("\n\n\n\n\n\n\n\n\n\n\nChoose an action:\n1) Encrypt\n2) Decrypt\n3) Quit")
+    if choose == "1":
+        encryption = input("\n\n\n\n\n\n\n\n\n\n\nChoose an action:\n1) Caesar\n2) Viginere")
+        if encryption == "1":
+            encryptidend = input("\n\n\n\n\n\n\n\n\n\n\nEnter string to be encrypted:")
+            encryptor = input("\n\n\n\n\n\n\n\n\n\n\nEnter desired shift right:")
+            try:
+                a = input("\n\n\n\n\n\n\n\n\n\n\n" + Caesar(encryptidend, int(encryptor)))
+            except ValueError:
+                pass
+
+        elif encryption == "2":
+            encryptidend = input("\n\n\n\n\n\n\n\n\n\n\nEnter string to be encrypted:")
+            encryptor = input("\n\n\n\n\n\n\n\n\n\n\nEnter desired key:")
+            try:
+                a = input("\n\n\n\n\n\n\n\n\n\n\n" + Viginere(encryptidend, encryptor))
+            except ValueError:
+                pass
+
+    elif choose == "2":
+        decryption = input("\n\n\n\n\n\n\n\n\n\n\nChoose an action:\n1) Caesar\n2) Viginere")
+        if decryption == "1":
+            decryptidend = input("\n\n\n\n\n\n\n\n\n\n\nEnter string to be decrypted:")
+            decryptor = input("\n\n\n\n\n\n\n\n\n\n\nEnter desired shift left:")
+            try:
+                a = input("\n\n\n\n\n\n\n\n\n\n\n" + unCaesar(decryptidend, int(decryptor)))
+            except ValueError:
+                pass
+
+        elif decryption == "2":
+            decryptidend = input("\n\n\n\n\n\n\n\n\n\n\nEnter string to be decrypted:")
+            decryptor = input("\n\n\n\n\n\n\n\n\n\n\nEnter desired key:")
+            try:
+                a = input("\n\n\n\n\n\n\n\n\n\n\n" + unViginere(decryptidend, decryptor))
+            except ValueError:
+                pass
+
+    elif choose == "3":
+        break
+
+
+
