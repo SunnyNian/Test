@@ -225,7 +225,5 @@ while True:
                 except:
                     pass
 
-
-
     elif choose == "6":
         break

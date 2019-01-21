@@ -63,4 +63,3 @@ def number():
 
     for key in sortedCount:
         print("{}: {}".format(key, sortedCount[key]))
-#
